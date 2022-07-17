@@ -124,7 +124,7 @@ function jumpok() {
 
 
 
-$(".go").html('<div class="post-html" id="post-html"><div class="getcookie" onclick="cookie2();">复制Cookie</div><div class="post-datadiv" id="post-datadiv">Body结果</div></div><div id="jsbody"></div><div class="app_close" id="app_close"><div style="width:50%;float:left;background-color:#f9f9f9;border-bottom-left-radius:5px;border-right:1px solid #eeeeee;" onclick="jumpok()">关闭并查看Text结果</div><div style="width:50%;float:left;background-color:#f9f9f9;border-bottom-right-radius:5px;" onclick="js_close();">关闭</div></div>');
+$(".go").html('<div class="post-html" id="post-html"><div class="getcookie" onclick="cookie2();">复制Cookie</div><div class="post-datadiv" id="post-datadiv">Body结果</div></div><div id="jsbody"></div><div class="app_close" id="app_close"><div style="width:50%;float:left;background-color:#f9f9f9;border-bottom-left-radius:5px;border-right:1px solid #eeeeee;" onclick="jumpok()">查看Text结果</div><div style="width:50%;float:left;background-color:#f9f9f9;border-bottom-right-radius:5px;" onclick="js_close();">关闭</div></div>');
 
 
 
