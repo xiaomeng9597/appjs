@@ -268,7 +268,7 @@ $("#tost").append('<div style="display:block;width:100%;height:100%;"><button ty
 
 
 /*$("#div_button").append('<div style="display:block;width:100%;height:100%;"><button type="button" style="font-size:15px;" onClick="web_post()">点击进入网页版</button></div>');*/
-$("#div_button").append('<div style="display:block;width:100%;height:100%;"><button type="button" style="font-size:15px;" onClick="web_post2()">点击进入网页版</button></div>');
+/*$("#div_button").append('<div style="display:block;width:100%;height:100%;"><button type="button" style="font-size:15px;" onClick="web_post2()">点击进入网页版</button></div>');*/
 $("#div_button2").append('<p><a target="_blank" href="javascript:;" onClick="qq()"><img border="0" src="https://xiaomeng9597.github.io/appjs/button.jpg" alt="点击这里给我发消息" title="点击这里给我发消息"></a></p>');
 
 
