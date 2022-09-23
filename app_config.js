@@ -302,7 +302,7 @@ function web_post2(){
 
 api.openFrame({
 name : "postweb",
-url : "https://xiaomeng9597.github.io/httppost/",
+url : "https://qsth520.gitee.io/httppost/",
 bgColor: "#ffffff",
 bounces: false,
 allowEdit: true,
