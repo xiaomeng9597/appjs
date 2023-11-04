@@ -85,15 +85,12 @@ function jumpok() {
     if (getbody) {
         try {
             api.removePrefs({
-                key: "jsbody2"
+                key: "jsbody"
             });
-
             api.setPrefs({
-                key: "jsbody2",
+                key: "jsbody",
                 value: getbody
             });
-            $api.rmStorage("jsbody");
-            $api.setStorage("jsbody", getbody);
         /*跳转页面*/
         api.openWin({
             name: "postweb2",
