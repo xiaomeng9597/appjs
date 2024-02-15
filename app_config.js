@@ -4,8 +4,8 @@ Apk_appVersion="1.0.1";
 Apk_dateTime="2022-07-12";
 Apk_content="修复部分已知Bug，“使用教程” 在软件右上角，里面有软件的使用方法。";
 /*Apk_content2="修复部分已知Bug，重新下载并且安装后此弹窗不在提示，本次属于强制更新，当前软件已上架至 “酷安市场” 酷安上搜索 “Post提交工具” 就能找到这个软件。";*/
-Apk_downurl="https://note.youdao.com/yws/api/personal/file/dd93d93b97248adc3fbb9bcc459e9693?method=download&shareKey=b18e2e786a99df4574521c2beff33033&inline=true";
-Apk_downurl2="https://note.youdao.com/yws/api/personal/file/dd93d93b97248adc3fbb9bcc459e9693?method=download&shareKey=b18e2e786a99df4574521c2beff33033&inline=true";
+Apk_downurl="https://xiaomeng9597.github.io/webjs/apk/Post%E6%8F%90%E4%BA%A4%E5%B7%A5%E5%85%B7_1.0.2.apk";
+Apk_downurl2="https://xiaomeng9597.github.io/webjs/apk/Post%E6%8F%90%E4%BA%A4%E5%B7%A5%E5%85%B7_1.0.2.apk";
 }catch(e){};
 })();
 
