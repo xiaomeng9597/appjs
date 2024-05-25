@@ -14,7 +14,7 @@ Apk_downurl3="https://note.youdao.com/yws/api/personal/file/38456afc083f8675ad34
 
 try{
 /*主更新*/
-if(Apk_appVersion && api.appVersion < Apk_appVersion){
+if(Apk_appVersion && Apk_appVersion > api.appVersion){
 api.confirm({
     title: "软件有新版本",
     msg: "最新版本："+Apk_appVersion+"\n更新日期："+Apk_dateTime+"\n更新内容："+Apk_content,
