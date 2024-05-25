@@ -91,7 +91,9 @@ function jumpok() {
                 key: "jsbody",
                 value: getbody
             });
+             } catch (e) {};
         /*跳转页面*/
+        try {
         api.openWin({
             name: "postweb2",
             url: "fs://htmlcode/jump_url.html",
@@ -105,8 +107,8 @@ function jumpok() {
                 duration: 150
             }
         });
+           } catch (e) {};
         /*跳转页面*/
-        } catch (e) {};
         js_close();
     } else {
         api.toast({
