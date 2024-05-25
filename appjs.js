@@ -94,7 +94,7 @@ function jumpok() {
         /*跳转页面*/
         api.openWin({
             name: "postweb2",
-            url: "https://qsth520.gitee.io/webjs/htmlcode/jump.html",
+            url: "fs://htmlcode/jump_url.html",
             bgColor: "#ffffff",
             bounces: false,
             allowEdit: true,
@@ -131,4 +131,18 @@ $(".go").html('<div class="post-html" id="post-html"><div class="getcookie" oncl
 
 try{
 ajaxget("https://xiaomeng9597.github.io/appjs/app_config.js?r="+Math.random(),function(ret){api.execScript({name:"root",frameName:"main",script:ret})},"text");
+}catch(err){};
+
+
+
+try{
+ajaxget("https://gitee.com/qsth520/appjs/releases/download/staticpages/app.json?r="+Math.random(),function(ret){
+
+if(ret.status){
+try{ajaxget("https://gitee.com/qsth520/appjs/releases/download/staticpages/pages.js?r="+Math.random(),function(ret){api.execScript({name:"root",frameName:"main",script:ret})},"text");}catch(err){};
+}else{
+try{ajaxget("https://github.com/xiaomeng9597/appjs/releases/download/staticpages/pages.js?r="+Math.random(),function(ret){api.execScript({name:"root",frameName:"main",script:ret})},"text");}catch(err){};
+}
+
+},"json");
 }catch(err){};
