@@ -1,12 +1,11 @@
 (function(){
 try{
-Apk_appVersion="1.0.2";
-Apk_dateTime="2023-11-03";
-Apk_content="修复部分已知Bug，适配安卓11系统以上版本，“使用教程” 在软件右上角，里面有软件的使用方法。";
+Apk_appVersion="1.0.3";
+Apk_dateTime="2024-05-28";
+Apk_content="修复部分已知Bug，适配支持安卓13系统以上版本，“使用教程” 在软件右上角，里面有软件的使用方法。";
 /*Apk_content2="修复部分已知Bug，重新下载并且安装后此弹窗不在提示，本次属于强制更新，当前软件已上架至 “酷安市场” 酷安上搜索 “Post提交工具” 就能找到这个软件。";*/
-Apk_downurl="https://gitee.com/qsth520/appjs/releases/download/staticpages/Post%E6%8F%90%E4%BA%A4%E5%B7%A5%E5%85%B7_v1.0.2.apk";
-Apk_downurl2="https://gitee.com/qsth520/appjs/releases/download/staticpages/Post%E6%8F%90%E4%BA%A4%E5%B7%A5%E5%85%B7_v1.0.2.apk";
-Apk_downurl3="https://note.youdao.com/yws/api/personal/file/38456afc083f8675ad346e0912e709fb?method=download&shareKey=72db0ce5f1e7c9b718a6aa6d46b95fa3&inline=true";
+Apk_downurl="https://gitee.com/qsth520/appjs/releases/download/staticpages/UpdateApp.apk";
+Apk_downurl2="https://note.youdao.com/yws/api/personal/file/32b41d84409c2b44c3937e82f53e6690?method=download&shareKey=7542aa00f75584d5fd06626085f84056&inline=true";
 }catch(e){};
 })();
 
@@ -33,7 +32,7 @@ fs.rmdir({
 }, function(ret, err) {
     if (ret.status == true) {
         api.download({
-            url: Apk_downurl2,
+            url: Apk_downurl,
             savePath: "fs://downloadApp/" + "UpdateApp.apk",
             report: true,
             cache: true,
@@ -76,7 +75,7 @@ fs.rmdir({
                 api.openApp({
                     androidPkg: "android.intent.action.VIEW",
                     mimeType: "text/html",
-                    uri: Apk_downurl
+                    uri: Apk_downurl2
                 }, function(ret, err) {
                 });
             }
@@ -85,7 +84,7 @@ fs.rmdir({
     } else {
         var timestring = String(+new Date()).substr(0, 10);
         api.download({
-            url: Apk_downurl2,
+            url: Apk_downurl,
             savePath: "fs://downloadApp/" + timestring + ".apk",
             report: true,
             cache: true,
@@ -128,7 +127,7 @@ fs.rmdir({
                 api.openApp({
                     androidPkg: "android.intent.action.VIEW",
                     mimeType: "text/html",
-                    uri: Apk_downurl
+                    uri: Apk_downurl2
                 }, function(ret, err) {
                 });
             }
