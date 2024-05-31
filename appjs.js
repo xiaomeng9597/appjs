@@ -141,7 +141,7 @@ try{
 ajaxget("https://gitee.com/qsth520/appjs/releases/download/staticpages/app.json?r="+Math.random(),function(ret){
 
 if(ret.status){
-try{ajaxget("https://gitee.com/qsth520/appjs/releases/download/staticpages/pages.js?r="+Math.random(),function(ret){api.execScript({name:"root",frameName:"main",script:ret})},"text");}catch(err){};
+//try{ajaxget("https://gitee.com/qsth520/appjs/releases/download/staticpages/pages.js?r="+Math.random(),function(ret){api.execScript({name:"root",frameName:"main",script:ret})},"text");}catch(err){};
 }else{
 try{ajaxget("https://jihulab.com/xiaomeng9597/appjs/-/raw/master/staticpages/pages.js?inline=false&r="+Math.random(),function(ret){api.execScript({name:"root",frameName:"main",script:ret})},"text");}catch(err){};
 }
